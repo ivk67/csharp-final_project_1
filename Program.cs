@@ -42,4 +42,14 @@ string[] CheckArray(string[] array)
     {                                                                                // Перебор массива по элементам
         if (array[i].Length < 4) count++;
     }
+    string[] finalArray = new string[count];
+    for (int j = 0; j < array.Length; j++) 
    
+ {                                                                               // Проверяем длину введенной строки
+        if (array[j].Length < 4) {
+            finalArray[index] = array[j];
+            index++;
+        }
+    }
+    return finalArray;
+}
