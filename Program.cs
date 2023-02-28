@@ -8,7 +8,7 @@ string Prompt(string message)
     string input = Console.ReadLine();
     return input;
 }
-void ShowArray(string[] array) 
+void ShowArray(string[] array)                                                        // определяем функцию ввода массива
 {
     for (int i = 0; i < array.Length; i++) {
         System.Console.Write($"{array[i]}  ");
@@ -21,7 +21,8 @@ string[] CreateArray()
     string value = String.Empty;
     string[] secondArray = new string[10];
     // System.Console.WriteLine($"Введите 'exit' для завершения ввода:");
-    for (count = 0; value != "exit"; count++) {
+    for (count = 0; value != "exit"; count++)                                        // непосредственный ввод массива с клавиатуры
+    {
         value = Prompt($"Введите {count+1}-е значение или введите 'exit' для завершения ввода ");
         if (value != "exit") {
             secondArray[count] = value;
@@ -33,3 +34,12 @@ string[] CreateArray()
     }
     return array;
 }
+string[] CheckArray(string[] array) 
+{   
+    int count = 0;
+    int index = 0;
+    for (int i = 0; i < array.Length; i++) 
+    {                                                                                // Перебор массива по элементам
+        if (array[i].Length < 4) count++;
+    }
+   
