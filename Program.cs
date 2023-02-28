@@ -15,3 +15,21 @@ void ShowArray(string[] array)
     }
     System.Console.WriteLine();
 }
+string[] CreateArray() 
+{   
+    int count = 0;
+    string value = String.Empty;
+    string[] secondArray = new string[10];
+    // System.Console.WriteLine($"Введите 'exit' для завершения ввода:");
+    for (count = 0; value != "exit"; count++) {
+        value = Prompt($"Введите {count+1}-е значение или введите 'exit' для завершения ввода ");
+        if (value != "exit") {
+            secondArray[count] = value;
+        }
+    }
+    string[] array = new string[count-1];
+    for (int i = 0; i < array.Length; i++) {
+         array[i] = secondArray[i];
+    }
+    return array;
+}
