@@ -1,0 +1,15 @@
+E:\REP\csharp\final_project_1\bin\Debug\net6.0\final_project_1.exe
+E:\REP\csharp\final_project_1\bin\Debug\net6.0\final_project_1.deps.json
+E:\REP\csharp\final_project_1\bin\Debug\net6.0\final_project_1.runtimeconfig.json
+E:\REP\csharp\final_project_1\bin\Debug\net6.0\final_project_1.dll
+E:\REP\csharp\final_project_1\bin\Debug\net6.0\final_project_1.pdb
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.csproj.AssemblyReference.cache
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.GeneratedMSBuildEditorConfig.editorconfig
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.AssemblyInfoInputs.cache
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.AssemblyInfo.cs
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.csproj.CoreCompileInputs.cache
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.dll
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\refint\final_project_1.dll
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.pdb
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\final_project_1.genruntimeconfig.cache
+E:\REP\csharp\final_project_1\obj\Debug\net6.0\ref\final_project_1.dll
