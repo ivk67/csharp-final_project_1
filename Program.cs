@@ -5,12 +5,13 @@
 string Prompt(string message) 
 {
     System.Console.Write(message);
-    string input = Console.ReadLine();
+    string? input = Console.ReadLine();
     return input;
 }
 void ShowArray(string[] array)                                                      // определяем функцию ввода массива
 {
-    for (int i = 0; i < array.Length; i++) {
+    for (int i = 0; i < array.Length; i++) 
+    {
         System.Console.Write($"{array[i]}  ");
     }
     System.Console.WriteLine();
@@ -20,16 +21,17 @@ string[] CreateArray()
     int count = 0;
     string value = String.Empty;
     string[] secondArray = new string[10];
-    // System.Console.WriteLine($"Введите 'exit' для завершения ввода:");
-    for (count = 0; value != "exit"; count++)                                      // непосредственный ввод массива с клавиатуры
+        for (count = 0; value != "exit"; count++)                                  // непосредственный ввод массива с клавиатуры
     {
-        value = Prompt($"Введите {count+1}-е значение или введите 'exit' для завершения ввода ");
-        if (value != "exit") {
+        value = Prompt($"Введите {count+1}-е значение или введите 'exit' для завершения ввода: ");
+        if (value != "exit") 
+        {
             secondArray[count] = value;
         }
     }
     string[] array = new string[count-1];
-    for (int i = 0; i < array.Length; i++) {
+    for (int i = 0; i < array.Length; i++) 
+    {
          array[i] = secondArray[i];
     }
     return array;
@@ -44,15 +46,16 @@ string[] CheckArray(string[] array)
     }
     string[] finalArray = new string[count];
     for (int j = 0; j < array.Length; j++) 
-   
- {                                                                                // Проверяем длину введенной строки
-        if (array[j].Length < 4) {
+    {                                                                             // Проверяем длину введенной строки
+        if (array[j].Length < 4) 
+        {
             finalArray[index] = array[j];
             index++;
         }
     }
     return finalArray;
 }
+
 string[] array = CreateArray();
 System.Console.Write("Полученные данные: ");                                      // Вывод полученных данных и результата
 ShowArray(array);
